@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="color:purple;font-size:13mm;">
+<script language="JavaScript">
+var liczba1=prompt("c=","");
+var liczba2=prompt("b=","");
+var c_sci=parseFloat(liczba1);
+var b_sci=parseFloat(liczba2);
+var a_sci=Math.sqrt(Math.pow(c_sci,2)-Math.pow(b_sci,2));
+document.write("c="+c_sci.toFixed(2)+"cm"+"<br>");
+document.write("b="+b_sci.toFixed(2)+"cm"+"<br>");
+document.write("a="+a_sci.toFixed(2)+"cm"+"<br>");
+var h1=a_sci;
+var h3=(a_sci*b_sci)/c_sci;
+document.write("h1="+h1.toFixed(2)+"cm"+"<br>");
+document.write("h3="+h3.toFixed(2)+"cm"+"<br>");
+var sin_alfa=b_sci/c_sci;
+document.write("sin alfa="+sin_alfa.toFixed(3)+"<br>");
+var alfa=Math.asin(b_sci/c_sci)*(180/Math.PI);
+document.write("alfa="+alfa.toFixed(3)+"st"+"<br>");
+</script>
+</div>
+</body>
+</html>
