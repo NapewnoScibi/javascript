@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <textarea rows="50" cols="70">
+            <html>
+                <body>
+                <div style="color:purple;font-size:13mm;">
+                <script language="JavaScript">
+                var liczba1=prompt("c=","");
+                var liczba2=prompt("b=","");
+                var c_sci=parseFloat(liczba1);
+                var b_sci=parseFloat(liczba2);
+                var a_sci=Math.sqrt(Math.pow(c_sci,2)-Math.pow(b_sci,2));
+                document.write("c="+c_sci.toFixed(2)+"cm"+"<br>");
+                document.write("b="+b_sci.toFixed(2)+"cm"+"<br>");
+                document.write("a="+a_sci.toFixed(2)+"cm"+"<br>");
+                var h1=a_sci;
+                var h2=b_sci;
+                var h3=(a_sci*b_sci)/c_sci;
+                document.write("h1="+h1.toFixed(2)+"cm"+"<br>");
+                document.write("h2="+h2.toFixed(2)+"cm"+"<br>");
+                document.write("h3="+h3.toFixed(2)+"cm"+"<br>");
+                var sin_alfa=a_sci/c_sci;
+                var cos_alfa=b_sci/c_sci;
+                var tangens_alfa = a_sci/b_sci;
+                var cotangens_alfa = b_sci/a_sci;
+                document.write("sin alfa="+sin_alfa.toFixed(3)+"<br>");
+                document.write("cos alfa="+cos_alfa.toFixed(3)+"<br>");
+                document.write("tg alfa="+tangens_alfa.toFixed(3)+"<br>");
+                document.write("ctg alfa="+cotangens_alfa.toFixed(3)+"<br>");
+                var beta=Math.asin(b_sci/c_sci)*(180/Math.PI);
+                var alfa=90-beta;
+                document.write("alfa="+alfa.toFixed(3)+"st"+"<br>");
+                document.write("beta="+beta.toFixed(3)+"st"+"<br>");
+                var obwod=a_sci+b_sci+c_sci;
+                document.write("obwod="+obwod.toFixed(2)+"cm"+"<br>");
+                var pole=b_sci*a_sci/2;
+                document.write("pole="+pole.toFixed(2)+"cm"+"<br>");
+                </script>
+                </div>
+                </body>
+                </html>
+</textarea>
+</html>
