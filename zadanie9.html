@@ -11,7 +11,7 @@ var D1_scib=parseFloat(liczba1);
 var D2_scib=parseFloat(liczba2);
 var G1_scib=parseFloat(godzina1);
 var G2_scib=parseFloat(godzina2);
-ile_sekund_scib=(D1_scib-D2_scib)*24*3600-((G1_scib-G2_scib)*60);
+ile_sekund_scib=(D1_scib-D2_scib)*24*3600+((G1_scib-G2_scib)*3600);
 document.write("ile_sekund="+D1_scib+" i "+D2_scib+" = "+ile_sekund_scib+"s<br>");
 document.write("dz1="+D1_scib+"<br>");
 document.write("godzina1="+G1_scib+"<br>");
