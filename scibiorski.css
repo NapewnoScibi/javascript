@@ -1,0 +1,22 @@
+/* hover - styl css sie zmieni kiedy element bedzie
+najechany przez myszke
+Mateusz Scibioski */
+div
+{
+	background-color:green;
+	height:100px;
+	width:626px;
+	font-size:20px;
+}
+#blok1:hover
+{
+	background-color:silver;
+}
+#blok2:hover
+{
+	background-color:yellow;
+}
+#blok3:hover
+{
+	background-color:#40E0D0;
+}
