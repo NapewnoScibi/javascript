@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Ścibiorski - zadanie 71</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_sci=7;
+            var b_sci=21;
+            for(let a=0;a<b_sci;a++)
+            {
+                document.write("*")
+            }
+            document.write("<br>")
+            var c_sci=b_sci-2
+            for(var a=0;a<a_sci;a++)
+            {
+                if(a == 0 || a_sci-1)
+                {
+                    document.write("*")
+                    if(c_sci == 0)
+                    {
+                    document.write("<br>")
+                    a_sci--;
+                    c_sci=b_sci;
+                    continue;
+                    }
+                    else if(c_sci>0)
+                    {
+                    document.write("&nbsp&#160")      
+                    c_sci--;
+                    a=1;    
+                    }
+                }
+                document.write("*<br>")
+            }
+            for(let a=0;a<b_sci;a++)
+            {
+                document.write("*")
+            }
+        </script>
+    </body>
+</html>
