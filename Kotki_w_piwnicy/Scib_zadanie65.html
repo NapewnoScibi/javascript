@@ -5,27 +5,16 @@
         <meta  charset="utf-8">
     </head>
     <body>
-        <p id="wynik"></p>
-        <button type="submit" value="Oblicz" onclick="SprawdzRok()">Sprawdz Ponownie</button><br>
         <script>
-            var scib = document.getElementById("wynik");
-            SprawdzRok();
-            function SprawdzRok()
-            {
-                rok_scib = prompt("Podaj rok od którego javascript jest w użyciu");
-                if(rok_scib==1995)
+                var rok_sci = prompt("Podaj rok od którego javascript jest w użyciu");
+                if(rok_stor==1995)
                 {
-                    scib.innerHTML="Brawo znasz rok od kiedy działa Javasript<br>wczytany rok="+rok_scib;
-                    scib.style.fontSize = "4em";
-                    scib.style.color = "blue";
+                    document.write("<p style=\"font-size:4em; color: blue;\">Brawo znasz rok od kiedy działa Javasript <br> wczytany rok="+rok_sci+"</p>");
                 }
                 else
                 {
-                    scib.innerHTML="Źle musisz jeszcze poczytać <br>wczytany rok="+rok_scib;
-                    scib.style.fontSize = "7em";
-                    scib.style.color = "red";
+                    document.write("<p style=\"font-size:7em; color: red;\">Źle musisz jeszcze poczytać <br> wczytany rok="+rok_sci+"</p>");
                 }
-            }
         </script>
     </body>
 </html>

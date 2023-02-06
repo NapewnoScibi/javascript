@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Ścibiorski Zadanie 74</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var liczba_sci1=prompt("Podaj Pierwszą liczbe=");
+            var liczba_sci2=prompt("Podaj Drugą liczbe=");
+            if (liczba_sci1<liczba_sci2)
+            {
+                for(var i = liczba_sci1;i<=liczba_sci2;i++)
+                {
+                if(i%2==0)
+                {
+                document.write(i+"<br>");
+                }
+                }
+            }
+            else if (liczba_sci1>liczba_sci2)
+            {
+                for(var i = liczba_sci2;i>=liczba_sci1;i--)
+                {
+                if(i%2==0)
+                {
+                document.write(i+"<br>");
+                }
+                }
+            }
+        </script>
+    </body>
+</html>
