@@ -10,23 +10,27 @@
             var liczba_sci2=prompt("Podaj Drugą liczbe=");
             if (liczba_sci1<liczba_sci2)
             {
-                for(var i = liczba_sci1;i<=liczba_sci2;i++)
+                for(let i = liczba_sci1;i<=liczba_sci2;i++)
                 {
-                if(i%2==0)
+                if(i%2==1)
                 {
-                document.write(i+"<br>");
+                document.write("<span style=\"color:red;font-size:30px;\">"+i+"</span><br>");
                 }
                 }
             }
             else if (liczba_sci1>liczba_sci2)
             {
-                for(var i = liczba_sci2;i>=liczba_sci1;i--)
+                for(let i = liczba_sci1;i>=liczba_sci2;i--)
                 {
-                if(i%2==0)
+                if(i%2==1)
                 {
-                document.write(i+"<br>");
+                    document.write("<span style=\"color:blue;font-size:15px;\">"+i+"</span><br>");
                 }
                 }
+            }
+            else
+            {
+                document.write("Liczby są błędne - brak obliczeń")
             }
         </script>
     </body>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mateusz Ścibiorski - zadanie 71</title>
+        <title>Mateusz Ścibiorski - zadanie 73</title>
         <meta charset="utf-8">
     </head>
     <body>
         <script>
-            var a_sci=7;
-            var b_sci=21;
+            var a_sci=prompt("Podaj Nazwisko");
+            var b_sci=prompt("Podaj Imię");
+            a_sci=(a_sci.length%4)+5;
+            b_sci=(b_sci.length%6)+20;
             for(let i = 0;i<a_sci;i++)
             {
                 if(i==0 || i==(a_sci-1))
