@@ -1,0 +1,39 @@
+<textarea cols="100" rows="100">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Scibiorski-zadanie64</title>
+        <meta  charset="utf-8">
+    </head>
+    <body>
+        <p id="wynik"></p>
+        <button type="submit" value="Oblicz" onclick="SprawdzParzysta()">Oblicz Ponownie</button><br>
+        <script>
+            var scib = document.getElementById("wynik");
+            SprawdzParzysta();
+            function SprawdzParzysta()
+            {
+                x = prompt("Podaj liczbe");
+                if(x%2==0)
+                {
+                    scib.innerHTML="Liczba jest parzysta";
+                    scib.style.fontSize = "3em";
+                    scib.style.color = "red";
+                }
+                else if(x%2==1)
+                {
+                    scib.innerHTML="Liczba jest nieparzysta";
+                    scib.style.fontSize = "5em";
+                    scib.style.color = "silver";
+                }
+                else
+                {
+                    scib.innerHTML="Źle wczytano liczbe";
+                    scib.style.fontSize = "1em";
+                    scib.style.color = "black";
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>

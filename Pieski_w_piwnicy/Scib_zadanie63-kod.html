@@ -1,0 +1,35 @@
+<textarea cols="100" rows="100">
+<html>
+<body>
+<p style="color:green;">Menu</p>
+<p style="color:red;">1-czerwony</p>
+<p style="color:blue;">2-niebieski</p>
+<button type="submit" value="Oblicz" onclick="Oblicz()">Oblicz</button><br>
+<p id="wynik"></p>
+  <script>
+    function Oblicz()
+    {
+        x=prompt("Podaj Kolor");
+        wynik=document.getElementById("wynik");
+        if(x == 1 ||  x.toLowerCase() ===  "czerwony")
+        {
+        wynik.style.color = "red";
+        wynik.style.fontSize = "7em";
+        wynik.innerHTML = "Wczytałeś kolor czerwony";
+        }
+        else if(x == 2 ||  x.toLowerCase() ===  "niebieski")
+        {
+        wynik.style.color = "blue";
+        wynik.style.fontSize = "1em";
+        wynik.innerHTML = "Wczytałeś kolor niebieski";
+        }
+        else{
+            wynik.style.color = "black";
+            wynik.style.fontSize = "1em";
+            wynik.innerHTML = "Błędnie wczytany kolor";
+        }
+    }
+  </script>
+</body>
+</html>
+</textarea>

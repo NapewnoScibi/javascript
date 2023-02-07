@@ -1,0 +1,38 @@
+<textarea cols="100" rows="100">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Ścibiorski - zadanie 73</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_sci=prompt("Podaj Nazwisko");
+            var b_sci=prompt("Podaj Imię");
+            a_sci=(a_sci.length%4)+5;
+            b_sci=(b_sci.length%6)+20;
+            for(let i = 0;i<a_sci;i++)
+            {
+                if(i==0 || i==(a_sci-1))
+                {
+                    for(let j = 0;j<b_sci;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_sci;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>
