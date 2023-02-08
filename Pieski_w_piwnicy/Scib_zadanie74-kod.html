@@ -1,40 +1,43 @@
 <textarea cols="100" rows="100">
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Mateusz Ścibiorski Zadanie 74</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <script>
-            var l1_t_sci,l2_t_sci,pocz_sci,tekst_sci;
-            l1_t_sci = parseFloat(prompt("Podaj Pierwszą liczbe z  przedzialu 20-60"));
-            if(l1_t_sci < 20 || l1_t_sci > 60)
-            {
-                document.write("liczba "+l1_t_sci+" nie należy do przedziału<br>");
-            }
-            l2_t_sci = parseFloat(prompt("Podaj Drugą liczbe z  przedzialu 20-60"));
-            if(l2_t_sci < 20 || l2_t_sci > 60)
-            {
-            
-                document.write("liczba "+l2_t_sci+" nie należy do przedziału<br>");
-            }
-            pocz_sci = parseFloat(prompt("Podaj wartość początkową tekstu"));
-            tekst_sci = parseFloat(prompt("Podaj dowolny tekst"));
-
-            if(l1_t_sci<l2_t_sci && pocz_sci <= 100)
-            { //zwiekszanie
-                for(let i=0;i<=95;i=+5)
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mateusz Ścibiorski Zadanie 74</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <script>
+                var l1_t_sci,l2_t_sci,pocz_sci,tekst_sci;
+                l1_t_sci = parseFloat(prompt("Podaj Pierwszą liczbe z  przedzialu 20-60"));
+                if(l1_t_sci < 20 || l1_t_sci > 60)
                 {
-                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+                    document.write("liczba "+l1_t_sci+" nie należy do przedziału<br>");
                 }
-            }
-            else
-            { // zmienjszanie
-
-            }
-            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
-        </script>
-    </body>
-</html>
+                l2_t_sci = parseFloat(prompt("Podaj Drugą liczbe z  przedzialu 20-60"));
+                if(l2_t_sci < 20 || l2_t_sci > 60)
+                {
+                
+                    document.write("liczba "+l2_t_sci+" nie należy do przedziału<br>");
+                }
+                pocz_sci = parseFloat(prompt("Podaj wartość początkową tekstu"));
+                tekst_sci = prompt("Podaj dowolny tekst");
+    
+                if(l1_t_sci<l2_t_sci)
+                { //zwiekszanie
+                    for(let i=pocz_sci;i<=95;i+=5)
+                    {
+                        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_sci+"<br></p>");
+                    }
+                }
+                else
+                { // zmienjszanie
+                    for(let i=pocz_sci;i>=5;i-=5)
+                    {
+                        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_sci+"<br></p>");
+                    }
+                }
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+            </script>
+        </body>
+    </html>
 </textarea>

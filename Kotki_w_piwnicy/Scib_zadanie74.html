@@ -19,18 +19,21 @@
                 document.write("liczba "+l2_t_sci+" nie należy do przedziału<br>");
             }
             pocz_sci = parseFloat(prompt("Podaj wartość początkową tekstu"));
-            tekst_sci = parseFloat(prompt("Podaj dowolny tekst"));
+            tekst_sci = prompt("Podaj dowolny tekst");
 
-            if(l1_t_sci<l2_t_sci && pocz_sci <= 100)
+            if(l1_t_sci<l2_t_sci)
             { //zwiekszanie
-                for(let i=0;i<=95;i=+5)
+                for(let i=pocz_sci;i<=95;i+=5)
                 {
-                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_sci+"<br></p>");
                 }
             }
             else
             { // zmienjszanie
-
+                for(let i=pocz_sci;i>=5;i-=5)
+                {
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_sci+"<br></p>");
+                }
             }
             document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
         </script>
