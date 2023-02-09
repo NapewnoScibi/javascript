@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Ścibiorski</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+          var x_sci=parseInt(prompt("Podaj liczbe"));
+          var kolejnosc_sci = 0;
+
+          if(x_sci%7 == 5 || x_sci%7 == 4)
+          {
+            for(let i = 10;i<=50;i=i+5)
+            {
+            kolejnosc_sci++;
+            document.write("<p style=\"font-size:"+i+"px; color: red;\">"+kolejnosc_sci+")Scibiorski</p>");
+            }
+          }
+          else
+          {
+            for(let i = 50;i>=10;i=i-6)
+            {
+                kolejnosc_sci++;
+            document.write("<p style=\"font-size:"+i+"px; color: blue;\">"+kolejnosc_sci+"Scibiorski</p>");
+            }
+          }
+        </script>
+    </body>
+</html>
+<!-- Ścibiorski Mateusz 3f -->
