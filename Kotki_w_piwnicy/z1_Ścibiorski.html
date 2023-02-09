@@ -8,17 +8,17 @@
         <script>
 		
           var x_sci=parseFloat(prompt("Podaj liczbe"));		  
-			if(x_sci < -10)
+			if(x_sci <= -10)
 			{
 				document.write("liczba należy do przedziału (-oo;-10>");
 			}
-			else if(x_sci>= -10 && x_sci <= 20)
+			else if(x_sci> -10 && x_sci <= 20)
 			{
 				document.write("liczba należy do przedziału (-10;20>");
 			}
-			else if(x_sci>= 20)
+			else if(x_sci > 20)
 			{
-				document.write("liczba należy do przedziału <20;oo)");
+				document.write("liczba należy do przedziału (20;oo)");
 			}
         </script>
     </body>
