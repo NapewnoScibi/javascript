@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Ścibiorski 3F</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_sci=parseFloat(prompt("Podaj szerokosc"));
+            var b_sci=parseFloat(prompt("Podaj dlugosc"));
+			var suma_sci = 0;
+            for(let i_sci = 1;i_sci<=b_sci;i_sci++)
+            {
+                for(let j_sci=1;j_sci<=a_sci;j_sci++)
+                {
+                    document.write("("+j_sci+","+i_sci+")&nbsp");
+					suma_sci += j_sci; 
+                }
+                document.write("<br>");
+            }
+			document.write("suma="+suma_sci);
+        </script>
+    </body>
+</html>
+<!-- Mateusz Ścibiorski 3F 15-2-2023-->
