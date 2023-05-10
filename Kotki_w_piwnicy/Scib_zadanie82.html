@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+    <h1>Ścibiorski</h1>
+    <div style="color:green">
+    <h2>dzis = new Date() -> Stworzenie Obiektu który przechowuje date i czas do zmiennej dzis</h2>
+    <h2>dzis = dzis.GetHours -> Zmiana Zmiennej dzis na wartosc aktualnej godziny </h2>
+    <h2>dzis = dzis.GetMinutes -> Zmiana Zmiennej dzis na wartosc aktualnej minuty</h2>
+    <h2>dzis = dzis.GetMonths -> Zmiana Zmiennej dzis na wartosc aktualnego miesiąca/p>
+    <h2>dzis = dzis.GetDate -> Zmiana Zmiennej dzis na wartosc aktualnej daty</h2>
+    <h2>dzis = dzis.GetFullYear -> Zmiana Zmiennej dzis na wartosc aktualnego roku </h2>
+</div>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),"</span>:",dzis.getMinutes())
+document.write("<span style='font-size:1cm'><br>Aktualna data : <span style='color:green'>",dzis.getMonth()+1,"</span>,<span style='color:red'>",dzis.getDate(),"</span>,<span style='color:blue'>",dzis.getFullYear(),"</span></span>");
+</script>
+</body>
+</html>
