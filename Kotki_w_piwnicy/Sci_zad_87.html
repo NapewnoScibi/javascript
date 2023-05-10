@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>
+Przykład ->pokaz formularza
+</title>
+<script language="JavaScript">
+function setfocus()
+{
+document.dwa.txt2.focus(); return;
+}
+function test1(form)
+{
+if (form.txt1.value == "")
+{
+alert("Podaj ciąg znaków!")
+}
+else if(form.txt1.value.length <= 4)
+{
+alert("nazwisko nie moze byc krotrze niz 4 literu!");
+}
+else
+{
+alert("Cześć "+form.txt1.value+" ! Informacja poprawna!");
+}
+}function test2(form)
+{
+if (form.txt2.value == "" || form.txt2.value.indexOf('@', 0) == -1)
+{
+alert("Niepoprawny adres poczty elektronicznej!");
+}
+else
+{
+alert("OK!");
+}
+}
+</script>
+</head>
+<body onLoad="setfocus()">
+<form name="jeden">
+Wpisz swoje nazwisko:<br>
+<input type="text" name="txt1">
+<input type="button" name="button1" value="Test" onClick="test1(this.form)">
+</form>
+<form name="dwa">
+Wpisz adres swojej poczty elektronicznej:<br>
+<input type="text" name="txt2">
+<input type="button" name="button2" value="Test" onClick="test2(this.form)">
+</form>
+<form method=post action="mailto:dowolny@mail.pl">
+<h3>Czy podoba Ci się ta strona ?</h3>
+<input name="choice" type="radio" value="1" checked>Tak<BR>
+<input name="choice" type="radio" value="2" >Może być<BR>
+<input name="choice" type="radio" value="3">Badziewie!<BR>
+<input name="submit" type="submit" value="Wyślij odpowiedź">
+</form>
+</body>
+</html>
