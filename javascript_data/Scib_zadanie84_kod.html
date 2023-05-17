@@ -1,0 +1,37 @@
+<textarea cols="100" rows="100">
+    <!DOCTYPE html>
+<html>
+<head>
+<title> zadanie 84 Mateusz Ścibiorskis </title>
+</head>
+<body>
+
+<script>
+dzis_sci = new Date();
+document.write("Aktualny czas : ",dzis_sci.getHours(),":",dzis_sci.getMinutes());
+</script>
+<div style="border:2px black solid;width: 10%;">
+<p id="czas_stopera">0.000</p>
+</div>
+<input type="button" name="Button1" value="START stoper" onclick="Stoper_Start_sci()">
+<input type="button" name="Button1" value="STOP stoper" onclick="Stoper_Stop_sci()">
+<script>
+var czas = 0;
+function Stoper_Start_sci() 
+{
+    var czas_stopera = document.getElementById("czas_stopera");
+    start_sci = new Date();
+    poczatek_sci = start_sci.getTime()
+}
+function Stoper_Stop_sci() 
+{
+    stop_sci = new Date();
+    koniec_sci = stop_sci.getTime()
+    roznica_sci = koniec_sci - poczatek_sci;
+    czas_stopera.innerHTML = roznica_sci/1000+" s";
+} 
+
+</script>
+</body>
+</html>
+</textarea>

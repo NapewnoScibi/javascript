@@ -1,0 +1,79 @@
+<textarea cols="100" rows="100">
+    <html>
+<head>
+<title>zadanie 86 Scibiorski</title>
+<script language="JavaScript">
+</script>
+</head>
+
+<body>
+    <p id="pierwszy_sci"></p>
+    <p id="drugi_sci"></p>
+    <p id="trzeci_sci"></p>
+    <script>      
+        var data = new Date();
+        function OstatniaModyfikacja_sci()
+        {
+            document.getElementById("pierwszy_sci").innerHTML = "Ostatnia modyfikacja to: "+document.lastModified;        
+        }
+
+        
+        function AktualnaData_sci()
+        { 
+            document.getElementById("drugi_sci").innerHTML = "Aktualna data to: "+(data.getMonth()+1)+"."+data.getDate()+"."+data.getFullYear();       
+        }
+
+
+        function AktualnaGodzina_sci()
+        {
+            document.getElementById("trzeci_sci").innerHTML="Aktualna godzina to: "+data.getHours()+":"+data.getMinutes();        
+        }       
+    </script>
+    <div>
+    <form>      
+        <a onclick="OstatniaModyfikacja_sci(' ')">
+        <img src="przycisk1_sci.png" 
+        alt="Przycisk1" 
+        border="0"
+        height="150"
+        width="150"
+        onmouseover="this.src = 'przycisk2_sci.png'"
+         onmouseout="this.src ='przycisk1_sci.png'" /> 
+        </a>       
+    </form>
+
+    <table>       
+    <tr id="przycisk1_sci"></tr>     
+    </table>
+    <form>
+        <a onclick="AktualnaData_sci(' ')">
+        <img src="przycisk3_sci.png" 
+        alt="Przycisk2" 
+        border="0" 
+        height="150"
+        width="150"
+        onmouseover="this.src = 'przycisk4_sci.png'" 
+        onmouseout="this.src ='przycisk3_sci.png'" /> 
+        </a>        
+    </form>
+    <table>       
+        <tr id="AktualnaData_sci"></tr>        
+    </table>
+    <form>
+        <a onclick="AktualnaGodzina_sci(' ')"> 
+        <img src="przycisk5_sci.png" 
+        alt="Przycisk3"
+         border="0" 
+         height="150"
+         width="150"
+        onmouseover="this.src = 'przycisk6_sci.png'"
+        onmouseout="this.src ='przycisk5_sci.png'" />
+        </a>       
+    </form>   
+    <table>       
+        <tr id="AktualnaGodzina_sci"></tr>        
+    </table>
+</div>
+</body>
+</html>
+</textarea>

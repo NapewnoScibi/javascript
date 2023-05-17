@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> zadanie 85 Mateusz Ścibiorski</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+    function DzienTygodnia() {
+        var dzis = new Date();
+        var DzienTygodnia = dzis.getDay();
+        switch (DzienTygodnia) {
+            case 0:
+                document.write("Dzień:Niedziela");
+                break;
+            case 1:
+                document.write("Dzień:poniedziałek.");
+                break;
+            case 2:
+                document.write("Dzień:wtorek.");
+                break;
+            case 3:
+                document.write("Dzień:środa.");
+                break;
+            case 4:
+                document.write("Dzień:czwartek.");
+                break;
+            case 5:
+                document.write("Dzień:piątek.");
+                break;
+            case 6:
+                document.write("Dzień:sobota.");
+                break;
+            default:
+                document.write("");
+        }
+    }
+</script>
+</head>
+<body>
+    <script type="text/javascript">
+        DzienTygodnia();
+    </script>
+</body>
+</html>
